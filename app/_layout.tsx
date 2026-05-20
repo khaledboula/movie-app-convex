@@ -19,16 +19,8 @@ import { Logo } from '@/components/logo';
 const getConvexUrl = () => {
   let url = process.env.EXPO_PUBLIC_CONVEX_URL;
   
-  if (typeof (globalThis as any).window !== "undefined") {
-    const host = (globalThis as any).window.location.host;
-    if (host.includes(".app.cto.new")) {
-      const backendHost = host.replace("3000-", "3210-");
-      return `https://${backendHost}`;
-    }
-  }
-
   if (!url) {
-    return "https://placeholder.convex.cloud";
+    return "https://kindred-impala-179.convex.cloud";
   }
   return url;
 };
