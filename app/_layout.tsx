@@ -20,7 +20,7 @@ const getConvexUrl = () => {
   let url = process.env.EXPO_PUBLIC_CONVEX_URL;
   
   if (!url) {
-    return "https://kindred-impala-179.convex.cloud";
+    return "https://doting-sturgeon-814.convex.cloud";
   }
   return url;
 };
