@@ -8,7 +8,10 @@
  * @module
  */
 
+import type * as notifications from "../notifications.js";
 import type * as test from "../test.js";
+import type * as tmdb from "../tmdb.js";
+import type * as users from "../users.js";
 
 import type {
   ApiFromModules,
@@ -17,7 +20,10 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  notifications: typeof notifications;
   test: typeof test;
+  tmdb: typeof tmdb;
+  users: typeof users;
 }>;
 
 /**
